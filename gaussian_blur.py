@@ -11,8 +11,7 @@ gray = cv2.cvtColor(img_copy, cv2.COLOR_RGB2GRAY )
 #plt.imshow(gray)
 
 blurred_img = cv2.GaussianBlur( gray, (9, 9), sigmaX =0)
-#plt.imshow(blurred_img, cmap = 'gray')
-
+plt.imshow(blurred_img, cmap = 'gray')
 
 kernel = np.array([[-1, 0, 1],
                    [-2, 0, 2],
